@@ -31,11 +31,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](src/assets/Screenshot%202023-02-27%20at%2012-24-05%20GITHUB%20user%20search%20app.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
 - Live Site URL: [live site URL here](https://git-hub-user-searcher.netlify.app/)
 
 ## My process
@@ -51,33 +50,53 @@ Users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+This was a great project to practice using React, fetching data from GitHub users API with the addition of implementing Dark mode. I'm really proud of the way I set Dark mode in my component.
+
+```jsx
+import Moon from "../assets/icon-moon.svg";
+import Sun from "../assets/icon-sun.svg";
+
+const [darkMode, setDarkMode] = useState(false);
+
+<div id="container" className={darkMode ? "dark-mode" : ""}>
+      
+      <header id="header">
+        <h1 id="title">devfinder</h1>
+        <button
+          typ="button"
+          id="btn-mode"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          <p
+          className="icons"
+            id="mode-text"
+          >
+            {darkMode ? "Light" : "Dark"}
+          </p>
+          <img
+            className="icons"
+            id="moonIcon"
+            src={darkMode ? Sun : Moon}
+            alt="Icon Sun/Moon"
+          />
+        </button>
+      </header>
+      </div>
+
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'm looking forward to learn more about React.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://www.youtube.com/watch?v=Oive66jrwBs) - This is a really great video to learn about fetching data from an Api.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yAlberto-12](https://www.frontendmentor.io/profile/Alberto)
 
 ## Acknowledgments
+
+I'm very thankful for my mentor [Tresure Kabareebe](https://github.com/trekab) that guided me through the process.
