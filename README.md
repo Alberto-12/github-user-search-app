@@ -95,7 +95,7 @@ I'm looking forward to learn more about React.
 
 ## Author
 
-- Frontend Mentor - [@Alberto-12](https://www.frontendmentor.io/profile/Alberto)
+- Frontend Mentor - [@Alberto-12](https://www.frontendmentor.io/profile/Alberto-12)
 
 ## Acknowledgments
 
